@@ -1,0 +1,43 @@
+.die {
+	border:1px solid #CCC;
+	margin:1em;
+	clear:both;
+	overflow: auto;
+}
+.die .side {
+	text-align:center;
+	background:pink;
+	cursor: pointer;
+	padding:1em;
+	float:left;
+
+	margin-left:1em;
+}
+
+.die .side.selected{
+	background:green;
+}
+
+.die .side:hover{
+	background: red;
+}
+
+a.button{
+	color: #AAA;
+	border:1px solid #AAA;
+	padding:.5em;
+	margin:.2em;
+	text-decoration: none;
+	text-transform:uppercase;
+}
+
+a.button:hover{
+	color:#777;
+	border-color:#777;
+}
+
+table {
+	border-collapse: collapse;
+	border:1px solid green;
+}
+td {}
