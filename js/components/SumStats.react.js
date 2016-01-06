@@ -6,10 +6,9 @@ var SumStats = React.createClass({
 		var heading_tds = [<td>Sum</td>];
 		var count_tds = [<td>Count</td>];
 		for (var key in this.props.data){
-			heading_tds.push(<td>{key}</td>);
+			heading_tds.push(<th>{key}</th>);
 			count_tds.push(<td>{this.props.data[key]}</td>)
 		}
-
 
 		return (
 			<table>
@@ -24,7 +23,6 @@ var SumStats = React.createClass({
 			</table>
 		)
 	}
-
 });
 
 
