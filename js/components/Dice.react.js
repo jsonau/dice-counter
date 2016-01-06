@@ -4,7 +4,9 @@ var DieSide = require('./DieSide.react');
 var Dice = React.createClass({
 	render: function(){
 		var sides = [];
+
 		for(var i=0; i<this.props.sides.length; i++){
+
 			sides.push(
 				<DieSide
 					value={this.props.sides[i]}
@@ -14,9 +16,11 @@ var Dice = React.createClass({
 			)
 		}
 
+		var cname = "die d"+this.props.diceIndex;
+
 		return (
 			<div>
-				<div className="die" ref="die" onChange={this.onSelection}>
+				<div className={cname} ref="die" onChange={this.onSelection}>
 					{ sides }
 				</div>
 			</div>
